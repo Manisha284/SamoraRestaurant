@@ -1,0 +1,70 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+.navbar-toggle-icon{
+	color:white;
+}
+.navbar-nav > li{
+  margin-left:15px;
+  margin-right:8px;
+}
+  
+.carousel-item img{
+	width:100%;
+	height:620px;
+}
+.carousel-indicators li {
+    display: inline-block;
+    width: 20px;
+    height:20px;
+    margin: 10px;
+    text-indent: 0;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    background-color: black;
+    box-shadow: inset 1px 1px 1px 1px rgba(0,0,0,0.5);
+}
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    height: 50px;
+    width: 50px;
+    outline: black;
+    background-color: rgba(0, 0, 0, 0.3);
+    background-size: 50%, 50%;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+.logo{
+	color:white;
+	font-size: 25px;
+	font-weight: bold;
+}
+.logo{
+	animation:colorchange 3s infinite;
+}
+@keyframes colorchange{
+	0%{color:yellow;}
+	50%{color:white;}
+	100%{color:yellow;}
+}
+.carousel-caption{
+	bottom:200px;
+}
+.carousel-caption h1,p{
+	animation:change 5s infinite;
+}
+@keyframes change{
+	0%{color:yellow;}
+	50%{color:white;}
+	100%{color:yellow;}
+.dropdown-item{
+	text-align: center;
+}
+.contacts{
+	width:50%;
+	background: red;
+}
+
+

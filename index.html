@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Manu Cafe</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="header">
+		<nav class="navbar navbar-expand-md navbar-light bg-danger font-weight-bold text-uppercase fixed-top">
+		<div class="container">
+        <a class="navbar-brand" href="#">
+         	<img src="./images/download.jpg" width="40" height="40" class="d-inline-block align-top" alt="">&nbsp&nbsp<span class="logo">Samora <small>restaurant</small></span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarid" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                 <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse " id="navbarid">
+            <ul class="navbar-nav ml-auto text-center">
+                <li class="nav-item active">
+                    <a class="nav-link text-white" href="#">Home</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link text-white" href="#about">AboutUs</a>
+                </li>
+                <li class="nav-item">
+                   <div class="dropdown">
+                		<button class="btn dropdown-toggle text-white font-weight-bold text-uppercase btn-outline-danger" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                             Gallery
+                        </button>
+                        <div class="dropdown-menu text-center" aria-labelledby="dropdownMenuButton">
+                        	<a class="dropdown-item text-danger font-weight-bold" href="#food">Food</a>
+                        	<a class="dropdown-item text-danger font-weight-bold" href="#restaurant">Restaurant</a>
+                         </div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                	<div class="dropdown">
+                		<button class="btn dropdown-toggle text-white font-weight-bold text-uppercase btn-outline-danger" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                             Menu
+                        </button>
+                        <div class="dropdown-menu text-center" aria-labelledby="dropdownMenuButton">
+                        	<a class="dropdown-item text-danger font-weight-bold" href="#veg">Veg</a>
+                        	<a class="dropdown-item text-danger font-weight-bold" href="#non-veg">Non-veg</a>
+                            <a class="dropdown-item text-danger font-weight-bold" href="#sweets">Dessert & Sweets</a>
+                            <a class="dropdown-item text-danger font-weight-bold" href="#icecreams">Ice-Creams</a>
+                         </div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                   <a class="nav-link text-white" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+        </div>
+        </nav>
+	</div>
+
+
+<!--*********************************navbar ends**********************************-->
+
+
+
+<!--*********************************image slider start***************************-->
+
+<div class="carousel slide" id="myslider" data-ride="carousel">
+        <!--carousel indicator-->
+        <ul class="carousel-indicators">
+          <li data-target="#myslider" data-slide-to="0" class=""></li>
+          <li data-target="#myslider" data-slide-to="1" class="active"></li>
+          <li data-target="#myslider" data-slide-to="2" class=""></li>
+        </ul>
+
+
+        <!--carousel slider-->
+        <div class="carousel-inner">
+          <div class="carousel-item" alt="1">
+            <img src="./images/1.jpg">
+                <div class="carousel-caption text-uppercase">
+                  <h1 style="color:white;font-size:33px;font-weight:bold;">When you here,your family
+                  </h1>
+                  <p style="color:white;font-size:27px;font-weight:bold;">People who love to eat are always best people
+                  </p><br>
+                  <button class="btn btn-danger btn-lg  text-white font-weight-bold" data-target="#book" data-toggle="modal">Book a table</button>
+                  <!--<a class="btn btn-danger btn-lg text-white" href=".boot">Book a table</a>-->
+                </div>
+              </div>
+              <div class="carousel-item active" alt="2">
+                <img src="./images/2.jpg">
+                <div class="carousel-caption text-uppercase">
+                  <h1 style="color:white;font-size:33px;font-weight:bold;">When you here,your family
+                  </h1>
+                  <p style="color:white;font-size:27px;font-weight:bold;">People who love to eat are always best people
+                  </p><br>
+                   <button class="btn btn-danger btn-lg  text-white font-weight-bold" data-target="#book" data-toggle="modal">Book a table</button>
+                  <!--<a class="btn btn-danger btn-lg text-white" href=".boot">Book a table</a>-->
+                </div>
+              </div>
+              <div class="carousel-item" alt="3">
+                <img src="./images/3.jpg">
+                <div class="carousel-caption text-uppercase">
+                  <h1 style="color:white;font-size:33px;font-weight:bold;">When you here,your family
+                  </h1>
+                  <p style="color:white;font-size:27px;font-weight:bold;">People who love to eat are always best people
+                  </p><br>
+                   <button class="btn btn-danger btn-lg  text-white font-weight-bold" data-target="#book" data-toggle="modal">Book a table</button>
+                  <!--<a class="btn btn-danger btn-lg text-white" href=".boot">Book a table</a>-->
+                </div>
+              </div>
+            </div>
+
+
+            <!-- carousel left and right-->
+        <a href="#myslider" data-slide="prev" class="carousel-control-prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a href="#myslider" data-slide="next" class="carousel-control-next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+      </div>  
+
+<!--*******************************image slider ends********************************-->   
+            	
+
+<!--*******************************extra header*************************************-->
+<section>
+<div class="jumbotron bg-danger text-white">
+  <div class="container">
+    <span class="header1 font-weight-bold text-uppercase" style="font-size: 25px;word-spacing: 5px;">For More details contact us</span>
+    <button class="btn btn-secondary btn-lg bg-white text-dark font-weight-bold" data-target="#con" data-toggle="modal" style="margin-left: 150px;">contact now</button>
+  </div>
+</div>
+
+
+   <!--****extra header modal***-->
+<div class="modal fade show" tabindex="-1" role="dialog" id="con">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Contact Us</h5>
+        <button type="button" class="close btn-danger" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+        	<div class="container">
+        	<div class="form-group"> 
+               <label class="w3-text-blue" style="padding-right: 100px;"><b>Name</b></label>
+               <input class="w3-input w3-border" type="text" placeholder="Name" id="Name">
+            </div>
+            <div class="form-group"> 
+               <label class="w3-text-blue" style="padding-right: 82px;"><b>Email Id</b></label>
+               <input class="w3-input w3-border" type="text" placeholder=" EmailId" id="Email">
+            </div>
+            <div class="form-group"> 
+               <label class="w3-text-blue" style="padding-right: 35px;"><b>PhoneNumber</b></label>
+               <input class="w3-input w3-border" type="text" placeholder=" PhoneNumber" id="Phone">
+            </div>
+             <div class="form-group"> 
+               <label class="w3-text-blue" style="padding-right: 75px;"><b>Message</b></label>
+               <textarea placeholder="message" id="Message"></textarea>
+            </div>
+        </div>
+        </form>
+    </div>
+    <div class="modal-footer">
+    	<button type="button" class="btn btn-danger text-white" onClick="myfun()">Send Message</button>
+    </div>
+</div>
+</div>
+</div>
+</section>
+<!--******************Extra header ends****************************-->
+
+
+
+<!--******************About Us section Starts***********************-->
+<section class="aboutus" id="about">
+	<div class="container">
+		<div class="text-center">
+			<h1 class="header2  text-danger"> welcome to Samora Restaurant</h1>
+		</div><br>
+		<div class="row">
+		<div class="col-md-6 col-sm-6 col-xs-6" style="padding:10px;">
+			<img src="./images/4.jpg" width="400px" height="300px" class="img-thumbnail">
+		</div>
+		<div class="col-md-6 col-sm-6 col-xs-6" style="padding:10px;">
+			<img src="./images/7.jpg" width="400px" height="300px" class="img-thumbnail">
+		</div>
+	</div>
+		<div><br>
+			<h4>
+			There are many restaurants. Some restaurants are quick and easy and others you stay at for a couple of hours. Some are very expensive but others are affordable. Not all restaurants have waiters or waitresses. Some of them have drive-thrus and others do not. There are three main categories: fast food restaurants, sit-down chain restaurants, and Five Star restaurants.Samora restaurant is the best restaurant once taste the food of samora restaurant.samora restaurant offers only fresh food.we have good chef's.once taste we are sure you love the food.
+		</h4>
+	</div>
+</div>
+</section><br><br>
+
+
+<!--***************************About us section ends*********************-->
+
+
+<!--*************************Gallery section1 starts**********************-->
+
+
+  <!--**********food gallery section****************-->
+<section class="foodgallery bg-warning" id="food">
+ 	<div class="container">
+ 		<h1 class="text-center text-danger pt-3">Food Gallery</h1><br>
+ 		<div class="row">
+ 				<div class="col-md-4 col-sm-4 col-xs-4" style="padding:40px">
+ 					<img src="./images/5.jpg" class="img-thumbnail">
+ 				</div>
+ 					<div class="col-md-4 col-sm-4 col-xs-4" style="padding:40px">
+ 					<img src="./images/6.jpg" class="img-thumbnail">
+ 				</div>
+ 					<div class="col-md-4 col-sm-4 col-xs-4" style="padding:40px">
+ 					<img src="./images/7.jpg" class="img-thumbnail">
+ 				</div>
+ 		</div>
+   
+   <br><br>
+
+ 		<div class="row">
+ 				<div class="col-md-4 col-sm-4 col-xs-4" style="padding:40px">
+ 					<img src="./images/8.jpg" class="img-thumbnail">
+ 				</div>
+ 					<div class="col-md-4 col-sm-4 col-xs-4" style="padding:40px">
+ 					<img src="./images/9.jpg" class="img-thumbnail">
+ 				</div>
+ 					<div class="col-md-4 col-sm-4 col-xs-4" style="padding:40px">
+ 					<img src="./images/10.jpg" class="img-thumbnail">
+ 				</div>
+ 			</div>
+
+ 			<br><br>
+
+ 		<div class="row">
+ 				<div class="col-md-4 col-sm-4 col-xs-4" style="padding:40px">
+ 					<img src="./images/11.jpg" class="img-thumbnail">
+ 				</div>
+ 					<div class="col-md-4 col-sm-4 col-xs-4" style="padding:40px">
+ 					<img src="./images/12.jpg" class="img-thumbnail">
+ 				</div>
+ 					<div class="col-md-4 col-sm-4 col-xs-4" style="padding:40px">
+ 					<img src="./images/13.jpg" class="img-thumbnail">
+ 				</div>
+ 			</div>
+ 	</div>
+ </section><br><br>
+
+ <!--************** gallery section1 ends**************-->
+
+
+<!----*************Menu section starts*****************-->
+
+ <!--*************veg Menu****************-->
+<section class="container" id="veg">
+	<div class="bg-danger text-center">
+		 <h2 class="p-1" style="color:yellow;">Veg Menu</h2>
+		</div>
+		<div class="row">
+		<div class="col-md-6 col-sm-6 col-xs-6" style="padding:10px;">
+			<div class="card" style="width: 450px; height:640px;">
+  <div class="card-body" style="background-color: brown">
+  	<img src="./images/download.jpg" width="40" height="40" class="d-inline-block align-top" alt="">&nbsp&nbsp<span class="logo">Samora <small>restaurant</small></span><br><br>
+  	<h2 class="card-subtitle text-center p-2" style="background-color: yellow;color:brown;">Veg Menu</h2><br>
+  	<h2 class="bg-warning text-center" style="color:brown;">RICE</h2>
+  	<table class="table table-borderless text-white font-weight-bold" style="font-size: 16px;">
+  		<tr>
+  			<th>Items</th>
+  			<th>cost</th>
+  		</tr>
+  		<tbody>
+  			<tr>
+  				<td>Zeera Rice</td>
+  				<td>70 /-</td>
+  			</tr>
+  			<tr>
+  				<td>Kaju Rice</td>
+  				<td>100 /-</td>
+  			</tr>
+  			<tr>
+  				<td>Butter Rice</td>
+  				<td>60 /-</td>
+  			</tr>
+  			<tr>
+  				<td>Masala Fried Rice</td>
+  				<td>80 /-</td>
+  			</tr>
+  			<tr>
+  				<td>Kaju Fried Rice</td>
+  				<td>100 /-</td>
+  			</tr>
+  			<tr>
+  				<td>Veg Fried Rice</td>
+  				<td>60 /-</td>
+  			</tr>
+  			<tr>
+  				<td>Mixed Fried Rice</td>
+  				<td>80 /-</td>
+  			</tr>
+  			<tr>
+  				<td>Veg Biryani</td>
+  				<td>120 /-</td>
+  			</tr>
+  		</tbody>
+  	</table>
+  </div>
+</div>
+</div>
+
+	<div class="col-md-6 col-sm-6 col-xs-6" style="padding:10px;">
+<div class="card" style="width: 450px; height:640px;">
+  <div class="card-body" style="background-color: brown">
+  	<img src="./images/download.jpg" width="40" height="40" class="d-inline-block align-top" alt="">&nbsp&nbsp<span class="logo">Samora <small>restaurant</small></span><br><br>
+  	<h2 class="card-subtitle text-center p-2" style="background-color: yellow;color:brown;">Veg Menu</h2><br>
+  	<h2 class="bg-warning text-center" style="color:brown;">ROTI</h2>
+  	<table class="table table-borderless text-white font-weight-bold" style="font-size: 16px;">
+  		<tr>
+  			<th>Items</th>
+  			<th>cost</th>
+  		</tr>
+  		<tbody>
+  			<tr>
+  				<td>Tandoori Roti</td>
+  				<td>10 /-</td>
+  			</tr>
+  			<tr>
+  				<td>Butter Naan</td>
+  				<td>30 /-</td>
+  			</tr>
+  			<tr>
+  				<td>Aloo Ka Parontha</td>
+  				<td>30 /-</td>
+  			</tr>
+  			<tr>
+  				<td>plain Naan</td>
+  				<td>30 /-</td>
+  			</tr>
+  			<tr>
+  				<td>Rumali(1 pcs)</td>
+  				<td>15 /-</td>
+  			</tr>
+  			<tr>
+  				<td>phulka(1 pcs)</td>
+  				<td>10 /-</td>
+  			</tr>
+  			<tr>
+  				<td>Laccha paratha</td>
+  				<td>15 /-</td>
+  			</tr>
+  			<tr>
+  				<td>Butter Paratha</td>
+  				<td>20 /-</td>
+  			</tr>
+  		</tbody>
+  	</table>
+  </div>
+</div>
+</div>
+</div>
+</section>
+<br><br>
+
+<!--*************non-veg Menu****************-->
+<section class="container" id="non-veg">
+	<div class="bg-danger text-center">
+		 <h2 class="p-1" style="color:yellow;">Non-Veg Menu</h2>
+		</div>
+		<div class="row">
+		<div class="col-md-6 col-sm-6 col-xs-6" style="padding:10px;">
+			<div class="card" style="width: 450px; height:530px;">
+  <div class="card-body" style="background-color: brown">
+  	<img src="./images/download.jpg" width="40" height="40" class="d-inline-block align-top" alt="">&nbsp&nbsp<span class="logo">Samora <small>restaurant</small></span><br><br>
+  	<h2 class="card-subtitle text-center p-2" style="background-color: yellow;color:brown;">Non-Veg Menu</h2><br>
+  	<h2 class="bg-warning text-center" style="color:brown;">BIRYANI'S</h2>
+  	<table class="table table-borderless text-white font-weight-bold" style="font-size: 16px;">
+  		<tr>
+  			<th>Items</th>
+  			<th>cost</th>
+  		</tr>
+  		<tbody>
+  			<tr>
+  				<td>Single Chicken Biryani</td>
+  				<td>155 /-</td>
+  			</tr>
+  			<tr>
+  				<td>Single Mutton Biryani</td>
+  				<td>189 /-</td>
+  			</tr>
+  			<tr>
+  				<td>Egg Biryani</td>
+  				<td>184 /-</td>
+  			</tr>
+  			<tr>
+  				<td>Chicken Biryani</td>
+  				<td>275 /-</td>
+  			</tr>
+  			<tr>
+  				<td>Egg Biryani Tray Meal</td>
+  				<td>194 /-</td>
+  			</tr>
+  		</tbody>
+  	</table>
+  </div>
+</div>
+</div>
+
+	<div class="col-md-6 col-sm-6 col-xs-6" style="padding:10px;">
+<div class="card" style="width: 450px; height:530px;">
+  <div class="card-body" style="background-color: brown">
+  	<img src="./images/download.jpg" width="40" height="40" class="d-inline-block align-top" alt="">&nbsp&nbsp<span class="logo">Samora <small>restaurant</small></span><br><br>
+  	<h2 class="card-subtitle text-center p-2" style="background-color: yellow;color:brown;">Non-Veg Menu</h2><br>
+  	<h2 class="bg-warning text-center" style="color:brown;">CURRIE'S</h2>
+  	<table class="table table-borderless text-white font-weight-bold" style="font-size: 16px;">
+  		<tr>
+  			<th>Items</th>
+  			<th>cost</th>
+  		</tr>
+  		<tbody>
+  			<tr>
+  				<td>Chicken Tikka Masala</td>
+  				<td>309 /-</td>
+  			</tr>
+  			<tr>
+  				<td>Special Chickens</td>
+  				<td>309 /-</td>
+  			</tr>
+  			<tr>
+  				<td>Special Muttons</td>
+  				<td>365 /-</td>
+  			</tr>
+  			<tr>
+  				<td>Butter Chicken</td>
+  				<td>309 /-</td>
+  			</tr>
+  		</tbody>
+  	</table>
+  </div>
+</div>
+</div>
+</div>
+</section>
+<br><br>
+
+<!--*************dessert Menu****************-->
+<section class="container" id="sweets">
+	<div class="bg-danger text-center">
+		 <h2 class="p-1" style="color:yellow;">Dessert & Sweets Menu</h2>
+		</div>
+		<div class="row">
+		<div class="col-md-6 col-sm-6 col-xs-6" style="padding:10px;">
+			<div class="card" style="width: 450px; height:530px;">
+  <div class="card-body" style="background-color: brown">
+  	<img src="./images/download.jpg" width="40" height="40" class="d-inline-block align-top" alt="">&nbsp&nbsp<span class="logo">Samora <small>restaurant</small></span><br><br>
+  	<h2 class="card-subtitle text-center p-2" style="background-color: yellow;color:brown;">Dessert Menu</h2><br>
+  	<table class="table table-borderless text-white font-weight-bold" style="font-size: 16px;">
+  		<tr>
+  			<th>Items</th>
+  			<th>cost</th>
+  		</tr>
+  		<tbody>
+  			<tr>
+  				<td>Rabdi Rasmalai(1Piece)</td>
+  				<td>30 /-</td>
+  			</tr>
+  			<tr>
+  				<td>Rasmalai(1Piece)</td>
+  				<td>20 /-</td>
+  			</tr>
+  			<tr>
+  				<td>Rasgulla(1Piece)</td>
+  				<td>20 /-</td>
+  			</tr>
+  			<tr>
+  				<td>Gulab Jamun</td>
+  				<td>20 /-</td>
+  			</tr>
+  			<tr>
+  				<td>Kesar Kulfi Faluda</td>
+  				<td>80 /-</td>
+  			</tr>
+  			<tr>
+  				<td>Gajar Halwa</td>
+  				<td>40 /-</td>
+  			</tr>
+  		</tbody>
+  	</table>
+  </div>
+</div>
+</div>
+
+	<div class="col-md-6 col-sm-6 col-xs-6" style="padding:10px;">
+<div class="card" style="width: 450px; height:530px;">
+  <div class="card-body" style="background-color: brown">
+  	<img src="./images/download.jpg" width="40" height="40" class="d-inline-block align-top" alt="">&nbsp&nbsp<span class="logo">Samora <small>restaurant</small></span><br><br>
+  	<h2 class="card-subtitle text-center p-2" style="background-color: yellow;color:brown;">Sweets Menu</h2><br>
+  	<table class="table table-borderless text-white font-weight-bold" style="font-size: 16px;">
+  		<tr>
+  			<th>Items</th>
+  			<th>cost</th>
+  		</tr>
+  		<tbody>
+  			<tr>
+  				<td>Plain Ladoo(1Piece)</td>
+  				<td>10 /-</td>
+  			</tr>
+  			<tr>
+  				<td>Kesar Ladoo(1Piece)</td>
+  				<td>20 /-</td>
+  			</tr>
+  			<tr>
+  				<td>Shahi Ladoo(1Piece)</td>
+  				<td>20 /-</td>
+  			</tr>
+  			<tr>
+  				<td>Milk Peda(1Piece)</td>
+  				<td>20 /-</td>
+  			</tr>
+  			<tr>
+  				<td>Kaju Barfi(1Piece)</td>
+  				<td>30 /-</td>
+  			</tr>
+  		</tbody>
+  	</table>
+  </div>
+</div>
+</div>
+</div>
+</section>
+<br><br>
+
+<!--***********************Ice-Cream Menu**********************-->
+
+<section class="container" id="icecreams">
+	<div class="bg-danger text-center">
+		 <h2 class="p-1" style="color:yellow;">Ice-Creams Menu</h2>
+		</div>
+		<div class="row">
+		<div class="col-md-6 col-sm-6 col-xs-6" style="padding:10px;">
+			<div class="card" style="width: 450px; height:510px;">
+  <div class="card-body" style="background-color: brown">
+  	<img src="./images/download.jpg" width="40" height="40" class="d-inline-block align-top" alt="">&nbsp&nbsp<span class="logo">Samora <small>restaurant</small></span><br><br>
+  	<h2 class="card-subtitle text-center p-2" style="background-color: yellow;color:brown;">Ice-Cream Menu</h2><br>
+  	<table class="table table-borderless text-white font-weight-bold" style="font-size: 16px;">
+  		<tr>
+  			<th>Items</th>
+  			<th>cost</th>
+  		</tr>
+  		<tbody>
+  			<tr>
+  				<td>Strawberry</td>
+  				<td>40 /-</td>
+  			</tr>
+  			<tr>
+  				<td>Vanilla With Strawberry Crush</td>
+  				<td>50 /-</td>
+  			</tr>
+  			<tr>
+  				<td>Chocolate Brownie</td>
+  				<td>55 /-</td>
+  			</tr>
+  			<tr>
+  				<td>Chocolate Chips</td>
+  				<td>55 /-</td>
+  			</tr>
+  			<tr>
+  				<td>Butter Scotch</td>
+  				<td>50 /-</td>
+  			</tr>
+  			<tr>
+  				<td>Vanilla Royal</td>
+  				<td>40 /-</td>
+  			</tr>
+  		</tbody>
+  	</table>
+  </div>
+</div>
+</div>
+</section><br><br>
+
+<!--**********************Menu section ends***************************-->
+
+
+
+<!--*************************Gallery section2 starts**********************-->
+
+  <!--**********Restaurant gallery section****************-->
+ <section class="restaurantgallery bg-warning" id="restaurant">
+ 	<div class="container">
+ 		<h1 class="text-center text-danger pt-3">Restaurant Gallery</h1><br>
+ 		<div class="row">
+ 				<div class="col-md-4 col-sm-4 col-xs-4" style="padding:40px">
+ 					<img src="./images/14.jpg" class="img-thumbnail">
+ 				</div>
+ 					<div class="col-md-4 col-sm-4 col-xs-4" style="padding:40px">
+ 					<img src="./images/15.jpg" class="img-thumbnail">
+ 				</div>
+ 					<div class="col-md-4 col-sm-4 col-xs-4" style="padding:40px">
+ 					<img src="./images/16.jpg" class="img-thumbnail">
+ 				</div>
+ 		</div>
+   
+   <br><br>
+
+ 		<div class="row">
+ 				<div class="col-md-4 col-sm-4 col-xs-4" style="padding:40px">
+ 					<img src="./images/17.jpg" class="img-thumbnail">
+ 				</div>
+ 					<div class="col-md-4 col-sm-4 col-xs-4" style="padding:40px">
+ 					<img src="./images/18.jpg" class="img-thumbnail">
+ 				</div>
+ 					<div class="col-md-4 col-sm-4 col-xs-4" style="padding:40px">
+ 					<img src="./images/19.jpg" class="img-thumbnail">
+ 				</div>
+ 			</div>
+ </section><br><br>
+
+ <!--************** gallery section2 ends**************-->
+
+
+
+
+<!--*****************Contact section starts*************-->
+<section class="container" id="contact">
+
+	<div>
+		 <h2 class="p-1 text-danger">CONTACT INFO</h2>
+		</div>
+	<div class="row">
+		<div class="col-md-6 col-sm-6 col-xs-6" style="padding:10px;">
+			<div class="card" style="width: 450px; height:430px;">
+  <div class="card-body">
+  	<h3 class="card-subtitle text-danger p-2">Address</h3>
+  	<h5>C-1042 soram society,<br>radama road,near purana society,<br>suram,bangalore,karnataka,India.</h5><br><br>
+  	<h3 class="card-subtitle text-danger p-2">Email</h3>
+  	<h5>Samorarestaurant2804@gmail.com</h5><br><br>
+  		<h3 class="card-subtitle text-danger p-2">Call Us</h3>
+  	<h5>+91 9995554444,+91 6666699999</h5>
+  </div>
+ </div>
+</div>
+
+
+		<div class="col-md-6 col-sm-6 col-xs-6" style="padding:10px;">
+			<div class="card" style="width: 450px; height:430px;">
+  <div class="card-body">
+  	<h1 class="card-subtitle text-danger p-2">Enquiry</h1><br>
+  	<form>
+        	<div class="container">
+        	<div class="form-group"> 
+               <label class="w3-text-blue" style="padding-right: 100px;"><b>Name</b></label>
+               <input class="w3-input w3-border" type="text" placeholder="Name" id="Name">
+            </div>
+            <div class="form-group"> 
+               <label class="w3-text-blue" style="padding-right: 82px;"><b>Email Id</b></label>
+               <input class="w3-input w3-border" type="text" placeholder=" EmailId" id="Email">
+            </div>
+            <div class="form-group"> 
+               <label class="w3-text-blue" style="padding-right: 35px;"><b>PhoneNumber</b></label>
+               <input class="w3-input w3-border" type="text" placeholder=" PhoneNumber" id="Phone">
+            </div>
+             <div class="form-group"> 
+               <label class="w3-text-blue" style="padding-right: 75px;"><b>Message</b></label>
+               <textarea placeholder="message" id="Message"></textarea>
+            </div>
+        </div>
+        </form><br>
+
+    	<button type="button" class="btn btn-danger text-white" onClick="myfun()">Send Message</button>
+    
+  </div>
+ </div>
+</div>
+</section>
+<br><br><br><br>
+
+<!--******************Contact section ends******************-->
+
+
+<!--*****************footer section starts******************-->
+<section class="footer">
+  <div class="container-fluid bg-secondary">
+    <div class="container p-3">
+    <div class="row">
+      <div class="Us">
+        <h3 class="text-white">About Samora Restaurant</h3>
+         <br><br>
+        <img src="./images/download.jpg" width="80" height="80" class="d-inline-block align-top" alt="">&nbsp&nbsp<span class="logo" style="font-size: 40px;">SAMORA <small>RESTAURANT</small></span>
+        <br><br>
+        <h5 class="text-white">Samora restaurant is the best restaurant <br>once taste the food of samora restaurant.<br>samora restaurant offers only fresh food.<br>we have good chef's.once taste we are <br>sure you love the food.</h5>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!--**************************footer section end****************-->
+
+
+<!--**************************extra footer section start**************-->
+<section>
+  <div class="footer1 bg-dark">
+    <div class="container pt-3 pb-2">
+      <h6 class="text-white">2020 Samora Restaurant.All Rights Reserved<span style="margin-left:500px;">Powered By Samora Restaurant</span></h6>
+    </div>
+  </div>
+</section>
+
+<!--*************************extra footer section ends******************-->
+
+
+<!--*************************book a table section***********************-->
+<section class="booking">
+<div class="modal fade show" tabindex="-1" role="dialog" id="book">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content" style="height:800px;">
+      <div class="modal-header">
+        <h5 class="modal-title text-danger">TABLE RESERVATION</h5>
+        <button type="button" class="close btn-danger" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body pl-4">
+        <p class="text-warning font-weight-bold"> we would be glad to reserve a table for you at our restaurant.</p>
+         <form>
+          <div class="container">
+          <div class="form-group"> 
+
+               <label class="w3-text-blue" style="padding-right: 100px;"><b>Name</b></label><br>
+               <input class="w3-input w3-border" type="text" id="Name">
+            </div>
+            <div class="form-group"> 
+               <label class="w3-text-blue" style="padding-right: 35px;"><b>PhoneNumber</b></label><br>
+               <input class="w3-input w3-border" type="text" id="Phone">
+            </div>
+            <div class="form-group"> 
+               <label class="w3-text-blue" style="padding-right: 82px;"><b>Email</b></label><br>
+               <input class="w3-input w3-border" type="text"  id="Email">
+            </div>
+            <div class="form-group"> 
+               <label class="w3-text-blue" style="padding-right: 82px;"><b>Date</b></label><br>
+               <input class="w3-input w3-border" type="date"  id="Date">
+            </div>
+            <div class="form-group"> 
+               <label class="w3-text-blue" style="padding-right: 82px;"><b>Time</b></label><br>
+               <input class="w3-input w3-border" type="time"  id="Time">
+            </div>
+            <div class="form-group"> 
+               <label class="w3-text-blue" style="padding-right: 82px;"><b>Number Of Attendees</b></label><br>
+               <input class="w3-input w3-border" type="number"  id="Attendees">
+            </div>
+             <div class="form-group"> 
+               <label class="w3-text-blue" style="padding-right: 75px;"><b>Additional requests/comments</b></label><br>
+               <textarea id="Message"></textarea>
+            </div>
+        </div>
+        </form>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-danger text-white" onClick="myfunction()">Submit</button>
+    </div>
+</div>
+</div>
+</div>
+</section>
+<!--******************Extra header end************************-->
+
+<!--*************************book a table section ends******************-->
+
+<!--*****************javascript section starts****************--> 
+
+   	<script type="text/javascript">
+		function myfun(){
+
+			  var naam=document.getElementById("Name").value;
+		    var phone=document.getElementById("Phone").value;
+        var email=document.getElementById("Email").value;
+        var message=document.getElementById("Message").value;
+
+		    if(naam==""){
+		    	alert("Please enter your NAME");
+		    }else if(naam.length<=2){
+		    	alert("Name length should be minimum 3");
+		    }else if(!isNaN(naam)){
+		    	alert("Name doesn't contain any number");
+		    }
+        else if(phone==""){
+          alert("Please enter your NUMBER");
+        }
+        else if(isNaN(phone)){
+          alert("phone number contains only numbers");
+        }
+		    else if(email==""){
+		    	alert("Please enter your EMAIL ID");
+		    }
+		    else if(message==""){
+                alert("Please write a MESSAGE");
+		    }
+		    else{
+		    	alert("Thanks for sending Message");
+		    }
+		}	
+
+
+
+    function myfunction(){
+        var naam=document.getElementById("Name").value;
+        var phone=document.getElementById("Phone").value;
+        var email=document.getElementById("Email").value;
+        var DATE=document.getElementById("Date").value;
+        var TIME=document.getElementById("Time").value;
+        var attendees=document.getElementById("Attendees").value;
+        var message=document.getElementById("Message").value;
+
+        if(naam==""){
+          alert("Please enter your NAME");
+        }else if(naam.length<=2){
+          alert("Name length should be minimum 3");
+        }else if(!isNaN(naam)){
+          alert("Name doesn't contain any number");
+        }else if(phone==""){
+          alert("Please enter your NUMBER");
+        }else if(isNaN(phone)){
+          alert("phone number contains only numbers");
+        }else if(email==""){
+          alert("Please enter your EMAIL ID");
+        }else if(DATE==""){
+          alert("please enter the DATE");
+        }else if(TIME==""){
+          alert("please enter the TIME");
+        }else if(attendees==""){
+          alert("please enter Number of attendees");
+        }else if(message==""){
+          alert("Please write a MESSAGE");
+        }else{
+          alert("Thanks for sending Message");
+        }
+    }
+   </script>
+</body>
+</html>
+
